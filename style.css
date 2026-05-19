@@ -796,7 +796,22 @@ footer {
     padding: 14px 20px !important;
   }
 
-  #hero { padding: 0 24px 60px; min-height: 600px; }
+  #hero {
+    padding: 96px 24px 48px;
+    align-items: flex-start;
+    min-height: 100vh;
+    min-height: 100svh;
+  }
+  .hero-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(7,9,13,0.75) 0%,
+      rgba(7,9,13,0.4) 50%,
+      rgba(7,9,13,0.88) 100%
+    );
+  }
+  .hero-content { max-width: 100%; }
+  .hero-desc { max-width: 100%; }
   .hero-stats { display: none; }
 
   section { padding: 64px 24px; }
@@ -813,7 +828,8 @@ footer {
   .services-grid { grid-template-columns: 1fr; }
   .services-header { flex-direction: column; align-items: flex-start; gap: 20px; }
   .hero-title { font-size: clamp(42px, 13vw, 80px); }
-  .hero-desc { font-size: 14px; }
+  .hero-subtitle { font-size: 16px; letter-spacing: 2px; }
+  .hero-desc { font-size: 14px; margin-bottom: 28px; }
   .btn-primary, .btn-secondary { width: 100%; justify-content: center; }
   .cap-specs { grid-template-columns: 1fr; }
   .hero-badge span { font-size: 10px; letter-spacing: 1px; }
